@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/icon_home"
+        android:layout_width="@dimen/icon"
+        android:layout_height="@dimen/icon"
+        android:contentDescription="@string/phone_icon_description"
+        android:src="@drawable/penguin5"
+        android:layout_gravity="center"
+        android:scaleType="centerInside"
+        android:background="@null"
+        android:layout_margin="10dp"/>
+    <ImageButton
+        android:id="@+id/icon_profile"
+        android:layout_width="@dimen/icon"
+        android:layout_height="@dimen/icon"
+        android:contentDescription="@string/phone_icon_description"
+        android:src="@drawable/profile"
+        android:scaleType="centerInside"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:layout_margin="10dp"/>
+    <ImageButton
+        android:id="@+id/icon_app"
+        android:layout_width="@dimen/icon"
+        android:layout_height="@dimen/icon"
+        android:scaleType="centerInside"
+        android:contentDescription="@string/phone_icon_description"
+        android:src="@drawable/penguin_app"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:layout_margin="10dp"/>
+</LinearLayout>
