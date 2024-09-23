@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bai3"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="CHƯƠNG TRÌNH TÍNH CHỈ SỐ BMI"
+        android:background="@color/green"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:text="Nhập tên: "
+            android:gravity="center_vertical"
+            android:textSize="30sp"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:inputType="text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:text="Chiều cao: "
+            android:gravity="center_vertical"
+            android:textSize="30sp"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/edtChieucao"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:inputType="numberDecimal"
+            android:hint="m" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:text="Cân nặng: "
+            android:gravity="center_vertical"
+            android:textSize="30sp"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/edtCannang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:inputType="numberDecimal"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnTinhBMI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TÍNH BMI"
+        android:textSize="30sp"
+        android:textColor="@color/green"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:text="BMI: "
+            android:textSize="30sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/edtBMI"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:editable="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:text="Chuẩn đoán: "
+            android:textSize="30sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/edtChuandoan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:editable="false"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnthoat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Thoat"
+        android:layout_marginTop="5dp"
+        android:padding="15dp"/>
+
+
+</LinearLayout>
