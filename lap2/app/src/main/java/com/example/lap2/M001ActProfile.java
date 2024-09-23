@@ -7,6 +7,8 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -23,6 +25,8 @@ public class M001ActProfile extends AppCompatActivity {
 
     ImageView imgvPhone;
     TextView txtPhone;
+    ImageButton btnback;
+
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -33,6 +37,14 @@ public class M001ActProfile extends AppCompatActivity {
 
         imgvPhone = findViewById(R.id.imgvPhone);
         txtPhone = findViewById(R.id.txtPhone);
+
+        btnback = findViewById(R.id.btnback);
+        btnback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
         imgvPhone.setOnClickListener(new View.OnClickListener() {
             @Override

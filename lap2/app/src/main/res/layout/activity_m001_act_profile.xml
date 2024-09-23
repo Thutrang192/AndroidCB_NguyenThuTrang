@@ -39,6 +39,17 @@
             app:tint="@color/white"
             android:padding="20dp"
             tools:ignore="ContentDescription" />
+        <ImageButton
+            android:id="@+id/btnback"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="#00000000"
+            android:src="@drawable/back"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp"
+            android:scaleType="centerInside"
+            android:contentDescription="@string/description_phone"/>
     </FrameLayout>
 
     <TableRow
@@ -125,4 +136,5 @@
                 android:textSize="18sp" />
         </LinearLayout>
     </TableRow>
+
 </LinearLayout>
